@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>India Early Years 2026 | Participate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#participate">
+      <span class="brand-mark">EY</span>
+      <span>India Early Years 2026</span>
+    </a>
+    <nav>
+      <a href="#participate">Participate</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Free national participation</p>
+        <h1>India's Top Early Years Educators & Care Champions 2026</h1>
+        <p class="lead">A national recognition initiative for teachers, coordinators, caregivers, helping staff, and daycare professionals.</p>
+      </div>
+      <div class="benefits">
+        <h2>Recognition Benefits</h2>
+        <ul>
+          <li>Participation is completely free of cost.</li>
+          <li>Every participant receives an e-certificate instantly.</li>
+          <li>100 selected participants may receive framed certificates and mementos free of cost.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="participate" class="panel">
+      <div class="section-head">
+        <h2>Participation Form</h2>
+        <p>Fill the details below. Your certificate will be generated automatically after submission.</p>
+      </div>
+
+      <form id="participationForm" class="form-grid" action="https://formsubmit.co/tarun.sharma22199@gmail.com" method="POST" target="formSubmitFrame">
+        <input type="hidden" name="_subject" id="formSubject" value="New Participation Submission">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_cc" id="userCcField">
+        <input type="hidden" name="_replyto" id="replyToField">
+        <input type="hidden" name="_autoresponse" value="Thank you for your participation in India's Top Early Years Educators & Care Champions 2026. Your participation has been successfully received. Your e-certificate has been generated on the website. Please save or print it for your records.">
+        <input type="hidden" name="Certificate ID" id="certificateIdField">
+        <label>
+          <span>Full Name</span>
+          <input name="fullName" type="text" required>
+        </label>
+        <label>
+          <span>Role</span>
+          <select name="role" required>
+            <option>Teacher</option>
+            <option>Coordinator</option>
+            <option>Caregiver</option>
+            <option>Helping Staff</option>
+            <option>Daycare Staff</option>
+            <option>Daycare Professional</option>
+          </select>
+        </label>
+        <label>
+          <span>Mobile Number</span>
+          <input name="phone" type="tel" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" required>
+        </label>
+        <label>
+          <span>City</span>
+          <input name="city" type="text" required>
+        </label>
+        <label>
+          <span>Area / Locality</span>
+          <input name="area" type="text" required>
+        </label>
+        <label>
+          <span>State</span>
+          <input name="state" type="text">
+        </label>
+        <label>
+          <span>Experience in Years</span>
+          <input name="experience" type="number" min="0" step="0.5">
+        </label>
+        <label class="span-2">
+          <span>Current / Last Preschool</span>
+          <input name="school" type="text">
+        </label>
+        <label class="span-2">
+          <span>Why should this educator or care champion be recognised?</span>
+          <textarea name="story" rows="4"></textarea>
+        </label>
+        <label class="checkbox span-2">
+          <input name="consent" type="checkbox" required>
+          <span>I confirm that the details are correct and I agree to receive participation/recognition communication.</span>
+        </label>
+        <button class="button primary span-2" type="submit">Submit & Generate Certificate</button>
+      </form>
+      <iframe class="hidden-frame" name="formSubmitFrame" title="Form submission"></iframe>
+    </section>
+
+    <section id="certificateSection" class="certificate-wrap hidden">
+      <div class="success-actions">
+        <h2>Certificate Generated</h2>
+        <div class="actions">
+          <button class="button primary" id="printCertificate" type="button">Print / Save PDF</button>
+          <button class="button" id="newEntry" type="button">New Participation</button>
+        </div>
+      </div>
+      <article class="certificate" id="certificate">
+        <p class="certificate-kicker">E-Certificate of Participation</p>
+        <h2>India's Top Early Years Educators & Care Champions 2026</h2>
+        <p class="certificate-copy">This certificate is proudly presented to</p>
+        <h3 id="certName">Participant Name</h3>
+        <p class="certificate-copy">for participating as a <strong id="certRole">Teacher</strong> in the national recognition and early years workforce initiative.</p>
+        <div class="certificate-meta">
+          <span id="certLocation">City, State</span>
+          <span id="certId">Certificate ID: EY2026-00000</span>
+        </div>
+        <p class="certificate-note">Participation is completely free of cost. Selected participants may receive framed certificates and mementos under the national recognition category.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>India's Top Early Years Educators & Care Champions 2026</strong>
+    <span>A national recognition and early years workforce initiative.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
